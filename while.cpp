@@ -150,4 +150,13 @@ int main()
 	G = G - g4;
 	cout << "\nВ итоге: " << G;
 	cout << "\n";
+	
+	cout << "\n\nЗадание 4\n";
+	int A, SUM = 0;
+	do {
+		cout << "Введите число: "; cin >> A;
+		SUM += A;
+	} while (A != 0); {
+		cout << "Сумма: " << SUM << endl;
+	}
 }
