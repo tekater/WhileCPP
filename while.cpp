@@ -13,15 +13,12 @@ int main()
 	case 1:
 	system("color B5");
 	break;
-
 	case 2:
 	system("color C2");
 	break;
-
 	case 3:
 	system("color E9");
 	break;
-
 	default:
 	system("color F0");
 	break;*/
@@ -89,7 +86,7 @@ int main()
 		cout << r << " ";
 		r++;
 	}
-	
+
 	cout << "\n\nЗадание 2\n";
 	int g1, g2;
 	cout << "Введите первую границу (от):\n";
@@ -144,11 +141,13 @@ int main()
 	cin >> g3;
 	cout << "Введите вторую границу (до):\n";
 	cin >> g4;
-	int G = g3;
+	int G = 0;
 	while (g3 <= g4) {
 		cout << g3 << " ";
 		g3++;
-		G++;
+		G = G + g3;
 	}
+	G = G - g4;
 	cout << "\nВ итоге: " << G;
+	cout << "\n";
 }
